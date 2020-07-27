@@ -7,80 +7,124 @@ permalink: /
 last_modified_date: 2020-04-27T17:54:08+0000
 ---
 
-# Focus on writing good documentation
-{: .fs-9 }
+# ArcherySec Documentation
 
-Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
-{: .fs-6 .fw-300 }
 
-[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/pmarsceill/just-the-docs){: .btn .fs-5 .mb-4 .mb-md-0 }
+Welcome to the ArcherySec documentation!
+
+There are multiple things are in ArcherySec tool, a user of ArcherySec need to know about. To help users, we've written in a detail and divided the ArcherySec docs into multiple sections
+
+You can navigate the docs via this index page, or you can jump from section to section using the left side provided index area of the navigation sidebar, available in most areas of this site.
 
 ---
 
-## Getting started
+## Introduction 
 
-### Dependencies
+Archery is an opensource vulnerability assessment and management tool which helps developers and pentesters to perform scans and manage vulnerabilities. Archery uses popular opensource tools to perform comprehensive scanning for web application and network. It also performs web application dynamic authenticated scanning and covers the whole applications by using selenium. The developers can also utilize the tool for implementation of their DevOps CI/CD environment.
 
-Just the Docs is built for [Jekyll](https://jekyllrb.com), a static site generator. View the [quick start guide](https://jekyllrb.com/docs/) for more information. Just the Docs requires no special plugins and can run on GitHub Pages' standard Jekyll compiler. The [Jekyll SEO Tag plugin](https://github.com/jekyll/jekyll-seo-tag) is included by default (no need to run any special installation) to inject SEO and open graph metadata on docs pages. For information on how to configure SEO and open graph metadata visit the [Jekyll SEO Tag usage guide](https://jekyll.github.io/jekyll-seo-tag/usage/).
+### Overview of the tool
 
-### Quick start: Use as a GitHub Pages remote theme
+- Perform Web and Network vulnerability Scanning using opensource tools.
+- Correlates and Collaborate all raw scans data, show them in a consolidated manner.
+- Perform authenticated web scanning.
+- Perform web application scanning using selenium.
+- Vulnerability Management.
+- Enable REST API's for developers to perform scanning and Vulnerability Management.
+- JIRA Ticketing System.
+- Sub domain discovery and scanning.
+- Periodic scans.
+- Concurrent scans.
+- Useful for DevOps teams for Vulnerability Management.
 
-1. Add Just the Docs to your Jekyll site's `_config.yml` as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/)
-```yaml
-remote_theme: pmarsceill/just-the-docs
-```
-<small>You must have GitHub Pages enabled on your repo, one or more Markdown files, and a `_config.yml` file. [See an example repository](https://github.com/pmarsceill/jtd-remote)</small>
+>>***Note: Currently project is in development phase and still lot of work going on. Stay tuned !!!***
+>
+>** ***DO NOT EXPOSE PUBLICLY, INTERNAL USE ONLY*** **
 
-### Local installation: Use the gem-based theme
 
-1. Install the Ruby Gem
+## Requirements
+
+* Python 3.6+ - [Python 3.6 Download](https://www.python.org/downloads/)
+* [OpenVAS 8, 9](http://www.openvas.org/index.html)
+* [OWASP ZAP 2.7.0](https://github.com/zaproxy/zaproxy/wiki/Downloads)
+* [Selenium Python Firefox Web driver](https://github.com/mozilla/geckodriver/releases)
+* [SSLScan](https://github.com/rbsec/sslscan)
+* [Nikto](https://cirt.net/Nikto2)
+* [NMAP Vulners](https://github.com/vulnersCom/nmap-vulners)
+
+## Quick start
+
+### On linux/MacOs environment 
+
+`export TIME_ZONE='Asia/Kolkata'`
+
+[https://en.wikipedia.org/wiki/List_of_tz_database_time_zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
+
 ```bash
-$ gem install just-the-docs
+$ git clone https://github.com/archerysec/archerysec.git
+$ cd archerysec
+$ ./setup.sh
+$ ./run.sh
 ```
-```yaml
-# .. or add it to your your Jekyll site’s Gemfile
-gem "just-the-docs"
-```
-2. Add Just the Docs to your Jekyll site’s `_config.yml`
-```yaml
-theme: "just-the-docs"
-```
-3. _Optional:_ Initialize search data (creates `search-data.json`)
-```bash
-$ bundle exec just-the-docs rake search:init
-```
-3. Run you local Jekyll server
-```bash
-$ jekyll serve
-```
-```bash
-# .. or if you're using a Gemfile (bundler)
-$ bundle exec jekyll serve
-```
-4. Point your web browser to [http://localhost:4000](http://localhost:4000)
 
-If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll) so that you can more easily work in your development environment.
+### On Windows
 
-### Configure Just the Docs
+`set TIME_ZONE='Asia/Kolkata'`
 
-- [See configuration options]({{ site.baseurl }}{% link docs/configuration.md %})
+[https://en.wikipedia.org/wiki/List_of_tz_database_time_zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
+
+```bash
+$ git clone https://github.com/archerysec/archerysec.git
+$ cd archerysec
+$ setup.bat
+$ run.bat
+```
+
+### Docker 
+
+```bash
+$ docker pull archerysec/archerysec
+$ docker run -it -p 8000:8000 archerysec/archerysec:latest
+
+# Docker Alpine image 
+$ docker pull archerysec/archerysec:alpine
+$ docker run -it -p 8000:8000 archerysec/archerysec:alpine
+
+# For persistence
+
+docker run -it -p 8000:8000 -v <your_local_dir>:/archerysec archerysec/archerysec:latest
+```
+
+### Docker Compose
+
+```bash
+$ docker-compose up -d
+```
+
+## Support.
+**Your generous donations will keep us motivated.**
+
+*Paypal:* [![Donate via Paypal](https://www.paypalobjects.com/en_GB/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LZU8R3F76D3GN&source=url)
+
+### Getting Started
+
+- [See configuration options]({{ site.baseurl }}{% link docs/gettingstarted.md %})
 
 ---
 
 ## About the project
 
-Just the Docs is &copy; 2017-{{ "now" | date: "%Y" }} by [Patrick Marsceill](http://patrickmarsceill.com).
+Archerysec is &copy; 2017-{{ "now" | date: "%Y" }} by [Anand Tiwari](https://anandtiwari.info).
 
 ### License
 
-Just the Docs is distributed by an [MIT license](https://github.com/pmarsceill/just-the-docs/tree/master/LICENSE.txt).
+Archerysec is distributed by an [GPL-3.0 License](https://github.com/archerysec/archerysec/blob/master/LICENSE).
 
 ### Contributing
 
 When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/pmarsceill/just-the-docs#contributing).
+email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/archerysec/archerysec).
 
-#### Thank you to the contributors of Just the Docs!
+#### Thank you to the contributors of ArcherySec!
 
 <ul class="list-style-none">
 {% for contributor in site.github.contributors %}
@@ -92,6 +136,6 @@ email, or any other method with the owners of this repository before making a ch
 
 ### Code of Conduct
 
-Just the Docs is committed to fostering a welcoming community.
+ArcherySec is committed to fostering a welcoming community.
 
-[View our Code of Conduct](https://github.com/pmarsceill/just-the-docs/tree/master/CODE_OF_CONDUCT.md) on our GitHub repository.
+[View our Code of Conduct](https://github.com/archerysec/archerysec/blob/master/.github/CODE_OF_CONDUCT.md) on our GitHub repository.

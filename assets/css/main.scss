@@ -1,0 +1,72 @@
+---
+# Add a comment to make this file sass-y.
+# Change this file for any custom CSS.
+---
+
+/* We need to add display:inline in order to align the '>>' of the 'read more' link */
+.post-excerpt p {
+	display:inline;
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+//@import
+//	"syntax"
+//;
+
+.bg-white {
+    background-color: #1f2327!important;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #f8f9fa;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #dc3545;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #f8f9fa;
+}
+
+.listfeaturedtag .card, .card-footer {
+     border: 0;
+     background-color: rgba(255,255,255,.5) !important
+}
+.jumbotron.fortags {
+    margin-bottom: -50px;
+    margin-top: 3rem;
+    padding: 0;
+    height: 150px;
+    border-radius: 0;
+    background-image: url(../images/blog.jpg);
+    background-size: cover;
+}
+.listfeaturedtag .wrapthumbnail {
+     background-size: cover;
+    height: 100%;
+    display: block;
+    background-position: 500% 40% !important;
+    background-origin: border-box!important;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+}
+ .featured-image {
+     display:block;
+     margin-bottom:1.0rem;
+}
+ .mainheading {
+    background-size: cover;
+    padding: 10rem 0rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    background-image: url(../images/blog2.jpg);
+    background-position: center;
+}
+.display-5 {
+    font-size: 4rem;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    color: #d14;
+}
