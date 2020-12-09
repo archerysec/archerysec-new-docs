@@ -15,8 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 title: ArcherySec Docs
 description: Archerysec Documentation website
-#baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://archerysec.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: # "/"  the subpath of your site, e.g. /blog
+#url: "https://archerysec.com" # the base hostname & protocol for your site, e.g. http://example.com
 repository: archerysec/archerysec
 
 permalink: pretty
