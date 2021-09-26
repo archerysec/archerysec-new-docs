@@ -36,78 +36,10 @@ Archery is an opensource vulnerability assessment and management tool which help
 - Concurrent scans.
 - Useful for DevOps teams for Vulnerability Management.
 
->>***Note: Currently project is in development phase and still lot of work going on. Stay tuned !!!***
->
->** ***DO NOT EXPOSE PUBLICLY, INTERNAL USE ONLY*** **
-
-
-## Requirements
-
-* Python 3.9+ - [Python 3.9 Download](https://www.python.org/downloads/)
-* [OpenVAS 8, 9](http://www.openvas.org/index.html)
-* [OWASP ZAP 2.7.0](https://github.com/zaproxy/zaproxy/wiki/Downloads)
-* [Selenium Python Firefox Web driver](https://github.com/mozilla/geckodriver/releases)
-* [SSLScan](https://github.com/rbsec/sslscan)
-* [Nikto](https://cirt.net/Nikto2)
-* [NMAP Vulners](https://github.com/vulnersCom/nmap-vulners)
-
-## Quick start
-
-### On linux/MacOs environment 
-
-`export TIME_ZONE='Asia/Kolkata'`
-
-[https://en.wikipedia.org/wiki/List_of_tz_database_time_zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
-
-```bash
-$ git clone https://github.com/archerysec/archerysec.git
-$ cd archerysec
-$ ./setup.sh
-$ ./run.sh
-```
-
-### On Windows
-
-`set TIME_ZONE='Asia/Kolkata'`
-
-[https://en.wikipedia.org/wiki/List_of_tz_database_time_zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
-
-```bash
-$ git clone https://github.com/archerysec/archerysec.git
-$ cd archerysec
-$ setup.bat
-$ run.bat
-```
-
-### Docker 
-
-```bash
-$ docker pull archerysec/archerysec
-$ docker run -it -p 8000:8000 archerysec/archerysec:latest
-
-# Docker Alpine image 
-$ docker pull archerysec/archerysec:alpine
-$ docker run -it -p 8000:8000 archerysec/archerysec:alpine
-
-# For persistence
-
-docker run -it -p 8000:8000 -v <your_local_dir>:/archerysec archerysec/archerysec:latest
-```
-
-### Docker Compose
-
-```bash
-$ docker-compose up -d
-```
-
-## Support.
-**Your generous donations will keep us motivated.**
-
-*Paypal:* [![Donate via Paypal](https://www.paypalobjects.com/en_GB/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LZU8R3F76D3GN&source=url)
 
 ### Getting Started
 
-- [See configuration options]({{ site.baseurl }}{% link docs/gettingstarted.md %})
+- [See configuration options]({{ site.baseurl }}{% link docs/getting-started/gettingstarted.md %})
 
 ---
 
