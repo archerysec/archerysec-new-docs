@@ -7,5 +7,3 @@ permalink: /docs/usages
 ---
 
 ## Usages
-
-TODO
