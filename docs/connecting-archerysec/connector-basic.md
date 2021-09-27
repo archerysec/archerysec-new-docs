@@ -10,3 +10,4 @@ permalink: /docs/connectors-basic
 
 ### Standard Connectors 
 
+Connectors let ArcherySec access your scanners to perform scans and analyze, consolidate and correlate between other scanners. You’ll need to run scanners and provide a scanners endpoint to ArcherySec.
