@@ -65,6 +65,8 @@ Static scans are the SAST scanners result listed in consolidated vulnerability d
 
 ## Infrastructre Scans
 
+Infrastructre scans are the network scanners result listed in consolidated vulnerability data where you can manage the web application vulnerability. 
+
 ### Network Scans List
 
 <br>
@@ -78,8 +80,6 @@ Static scans are the SAST scanners result listed in consolidated vulnerability d
 <br>
 
 ### Network Vulnerability Details
-
-Network scans are the infrastructure scanners result listed in consolidated vulnerability data where you can manage the web application vulnerability. 
 
 <br>
 ![img](img/scans/net-vuln-details.png)
