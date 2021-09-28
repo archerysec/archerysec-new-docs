@@ -13,7 +13,7 @@ Scans are the list of scans complated by scanners and consolidated list of vulne
 
 ## Dynamic Scans
 
-Dynamic scans are they web application scanners result listed in consolidated vulnerability data where you can manage the web application vulnerability. 
+Dynamic scans are the web application scanners result listed in consolidated vulnerability data where you can manage the web application vulnerability. 
 
 ### List All Dynamic Scans
 <br>
@@ -38,6 +38,8 @@ Dynamic scans are they web application scanners result listed in consolidated vu
 <br>
 
 ## Static Scans (SAST Scans)
+
+Static scans are the SAST scanners result listed in consolidated vulnerability data where you can manage the web application vulnerability. 
 
 ### List All Static Scans 
 
@@ -76,6 +78,8 @@ Dynamic scans are they web application scanners result listed in consolidated vu
 <br>
 
 ### Network Vulnerability Details
+
+Network scans are the infrastructure scanners result listed in consolidated vulnerability data where you can manage the web application vulnerability. 
 
 <br>
 ![img](img/scans/net-vuln-details.png)
