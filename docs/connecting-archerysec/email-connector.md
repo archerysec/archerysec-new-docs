@@ -4,6 +4,7 @@ title: Email Connector
 nav_order: 34
 parent: Connector
 permalink: /docs/email-connector
+last_modified_date: 2021-09-29T22:54:08+0000
 ---
 
 # Email Connector

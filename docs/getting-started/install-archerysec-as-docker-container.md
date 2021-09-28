@@ -4,6 +4,7 @@ title: Install ArcherySec As Docker Container
 nav_order: 6
 parent: Getting Started
 permalink: /docs/install-archerysec-as-docker-container
+last_modified_date: 2021-09-29T22:54:08+0000
 ---
 
 # Install ArcherySec As Docker Container

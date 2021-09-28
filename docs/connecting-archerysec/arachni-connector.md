@@ -4,6 +4,7 @@ title: Arachni Scanner Connector
 nav_order: 31
 parent: Connector
 permalink: /docs/arachni-connector
+last_modified_date: 2021-09-29T22:54:08+0000
 ---
 
 # Arachni Scanner Connector

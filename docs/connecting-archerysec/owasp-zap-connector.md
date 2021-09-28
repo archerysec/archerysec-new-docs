@@ -4,6 +4,7 @@ title: OWASP ZAP Scanner Connector
 nav_order: 29
 parent: Connector
 permalink: /docs/owas-zap-connector
+last_modified_date: 2021-09-29T22:54:08+0000
 ---
 
 # OWASP ZAP Connector

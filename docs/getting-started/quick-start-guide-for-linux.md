@@ -4,6 +4,7 @@ title: Quick Start Guide For Linux
 nav_order: 4
 parent: Getting Started
 permalink: /docs/quick-start-guide-for-linux
+last_modified_date: 2021-09-29T22:54:08+0000
 ---
 
 # Quick Start Guide For Linux
