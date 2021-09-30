@@ -52,3 +52,9 @@ To define a CI/CD policy:
 <br>
 ![img](img/cicd/copy-cmd.png)
 <br>
+
+## archerysec-cli Scan
+
+<br>
+![img](img/cicd/cli-scan.png)
+<br>
